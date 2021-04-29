@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script src="https://kit.fontawesome.com/df77f1360d.js" crossorigin="anonymous"></script>
+    <title>AMECA Electronic Company</title>
+</head>
+<body onload="renderTable()">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
+        <a class="text-white navbar-brand" href ="#">
+        <i class="fas fa-laptop-house"></i> AMECA Electronic Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navabarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto menu">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Orders</a>
+                    </li>
+                 <li class="nav-item active">
+                <a class="nav-link" href="order.html">Edit Orders</a>
+                    </li>
+                 <li class="nav-item active">
+                <a taget="_blank" class="nav-link" href="../index.html">Website</a>
+                    </li>
+                 <li class="nav-item active">
+                <a taget="_blank" class="nav-link" href="../cart.html">Shopping Cart</a>
+                    </li>
+
+            </ul>
+
+            <a class="text-white nav-link" href="../index.html">
+                EXIT
+                </a>
+        </div>
+    </nav>
+        <div class="container">
+            <div class="container mt-4">
+                <main role="main">
+                    <div class="row">
+                        <div class="col">
+                            <h1>ORDERS</h1>
+                            <div class="table-responsive-sm">
+                                <table id="table" class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">ORDER</th>
+                                            <th scope="col">TOTAL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <footer class="container">
+            <p class="float-right">
+              <a href="#">TOP</a></p>
+          </footer>
+        
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+    <script src="BooksArtJS.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    
+    <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCNmCvR_rmV-XxH7wzkh9f8R5wqdJ-X940",
+      authDomain: "ecommerce-6eefd.firebaseapp.com",
+      databaseURL: "https://ecommerce-6eefd-default-rtdb.firebaseio.com",
+      projectId: "ecommerce-6eefd",
+      storageBucket: "ecommerce-6eefd.appspot.com",
+      messagingSenderId: "972227397012",
+      appId: "1:972227397012:web:1c527b220e832550f7bb81",
+      measurementId: "G-FFBCW4XDQS"
+    };
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="table.js"></script>
+</body>
+</html>
